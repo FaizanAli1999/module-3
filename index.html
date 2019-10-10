@@ -1,0 +1,214 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        #myDIV {
+            width: 100%;
+            padding: 50px 0;
+            text-align: center;
+            background-color: lightblue;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <a href="#default" class="logo">Logo></a><span class="text-white">Project_1</span>
+    </div>
+    <div class="header text-center">
+        <h3 class="text-white text-center">
+            <button class="button1"><i class="fa fa-rotate-right"></i></button>
+            <button class="button1"><i class="fa fa-rotate-left"></i> </button>
+            <span> | </span>
+            <button class="button1"><span class="glyphicon glyphicon-zoom-in"></span></button>
+            <button class="button1"><span class="glyphicon glyphicon-zoom-out"></span></button>
+        </h3>
+    </div>
+    <div id="sidebar-left">
+        <!--<div class="topnav">
+            <a class="active" href="#home">Services</a>
+            <a href="#news">Nodes</a>
+        </div>-->
+        <div class="row">
+            <div class="col">
+                <button id="view_detail" class="button3">Services</button>
+                <button id="view_detail_two" class="button2">Nodes</button>
+            </div>
+
+
+
+        </div>
+        <div id="services">
+            <div class="row">
+                <br/>
+                <div class="col text-center">
+                    <div draggable="true">
+                        <h1><i class="fa fa-envelope" aria-hidden="true"></i></h1>
+                    </div>
+                </div>
+                <br/>
+                <div class="col ">
+                    <div draggable="true">
+                        <h1><i class="fa fa-file" aria-hidden="true"></i></h1>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="row">
+                <br/>
+                <div class="col text-center">
+                    <div draggable="true">
+                        <h1><i class="fa fa-phone" aria-hidden="true"></i></h1>
+                    </div>
+                </div>
+                <br/>
+                <div class="col ">
+                    <div draggable="true">
+                        <h1><i class="fa fa-camera" aria-hidden="true"></i></h1>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="row">
+                <br/>
+                <div class="col text-center">
+                    <div draggable="true">
+                        <h1><i class="fa fa-window-minimize" aria-hidden="true"></i></h1>
+                    </div>
+                </div>
+                <br/>
+                <div class="col ">
+                    <div draggable="true">
+                        <h1><i class="fa fa-upload" aria-hidden="true"></i></h1>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="row">
+                <br/>
+                <div class="col text-center">
+                    <div draggable="true">
+                        <h1><i class="fa fa-dot-circle-o" aria-hidden="true"></i></h1>
+                    </div>
+                </div>
+                <br/>
+                <div class="col ">
+                    <div draggable="true">
+                        <h1><i class="fa fa-music" aria-hidden="true"></i></h1>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div id="nodes">
+            <div class="row">
+                <br/>
+                <div class="col text-center">
+                    <div draggable="true">
+                        <h1><i class="fa fa-music" aria-hidden="true"></i></h1>
+                    </div>
+                </div>
+                <br/>
+                <div class="col ">
+                    <div draggable="true">
+                        <h1><i class="fa fa-music" aria-hidden="true"></i></h1>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="row">
+                <br/>
+                <div class="col text-center">
+                    <div draggable="true">
+                        <h1><i class="fa fa-music" aria-hidden="true"></i></h1>
+                    </div>
+                </div>
+                <br/>
+                <div class="col ">
+                    <div draggable="true">
+                        <h1><i class="fa fa-music" aria-hidden="true"></i></h1>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="row">
+                <br/>
+                <div class="col text-center">
+                    <div draggable="true">
+                        <h1><i class="fa fa-window-minimize" aria-hidden="true"></i></h1>
+                    </div>
+                </div>
+                <br/>
+                <div class="col ">
+                    <div draggable="true">
+                        <h1><i class="fa fa-upload" aria-hidden="true"></i></h1>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="row">
+                <br/>
+                <div class="col text-center">
+                    <div draggable="true">
+                        <h1><i class="fa fa-dot-circle-o" aria-hidden="true"></i></h1>
+                    </div>
+                </div>
+                <br/>
+                <div class="col ">
+                    <div draggable="true">
+                        <h1><i class="fa fa-music" aria-hidden="true"></i></h1>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div id="main">
+        <div id="main2"></div>
+    </div>
+    <div id="sidebar-right">
+        <div class="header1 text-white">Nodes</div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $('#view_detail').on('click', function() {
+                $('#services').show();
+                $('#nodes').hide();
+            });
+            $('#view_detail_two').on('click', function() {
+                $('#services').hide();
+                $('#nodes').show();
+            });
+
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#view_detail").trigger("click");
+        });
+    </script>
+</body>
+
+</html>
